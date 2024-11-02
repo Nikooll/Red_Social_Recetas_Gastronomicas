@@ -67,6 +67,7 @@ public class AdapterDao<T> implements InterfazDao<T> {
                 sb.append(in.nextLine()).append("\n");
             }
         }
+        
         return sb.toString().trim();
     }
 

@@ -14,6 +14,7 @@ public void setInfo(E info) {
     this.info = info; // Establece la información del nodo
 }
 
+
 // Getter para next
 public Node<E> getNext() {
     return next; 
