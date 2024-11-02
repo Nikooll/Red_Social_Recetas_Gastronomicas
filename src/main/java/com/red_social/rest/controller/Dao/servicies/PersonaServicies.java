@@ -1,8 +1,8 @@
 package com.red_social.rest.controller.Dao.servicies;
 
-import controller.tda.list.LinkedList;
+import com.red_social.rest.controller.tda.list.LinkedList;
 import models.Persona;
-import controller.Dao.PersonaDao;
+import com.red_social.rest.controller.Dao.PersonaDao;
 
 public class PersonaServicies {
     private PersonaDao obj;

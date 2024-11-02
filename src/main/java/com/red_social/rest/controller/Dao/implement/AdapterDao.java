@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Scanner;
 import com.google.gson.Gson;
-import controller.tda.list.LinkedList;
+import com.red_social.rest.controller.tda.list.LinkedList;
 
 public class AdapterDao<T> implements InterfazDao<T> {
     private Class<T> clazz;
@@ -34,6 +34,7 @@ public class AdapterDao<T> implements InterfazDao<T> {
         return list;
     }
 
+    
     public void merge(T object, Integer index) throws Exception {
         // Implementación pendiente
     }

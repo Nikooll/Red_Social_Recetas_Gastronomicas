@@ -1,6 +1,7 @@
 package com.red_social.rest.controller.Dao.implement;
 
-import controller.tda.list.LinkedList;
+
+import com.red_social.rest.controller.tda.list.LinkedList;
 
 public interface InterfazDao<T> {
     public void persist(T object) throws Exception;

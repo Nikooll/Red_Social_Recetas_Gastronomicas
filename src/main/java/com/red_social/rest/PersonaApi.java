@@ -1,6 +1,6 @@
 package com.red_social.rest;
 
-import controller.Dao.servicies.PersonaServicies;
+import com.red_social.rest.controller.Dao.servicies.PersonaServicies;
 import java.util.HashMap;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;

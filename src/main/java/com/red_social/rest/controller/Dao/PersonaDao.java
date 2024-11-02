@@ -1,9 +1,8 @@
-package com.app_rutas.controller.dao;
-
+package com.red_social.rest.controller.Dao;
 
 import models.Persona;
-import controller.Dao.implement.AdapterDao;
-import controller.tda.list.LinkedList;
+import com.red_social.rest.controller.Dao.implement.AdapterDao;
+import com.red_social.rest.controller.tda.list.LinkedList;
 
 public class PersonaDao extends AdapterDao<Persona> {
     private Persona persona = new Persona(); 
