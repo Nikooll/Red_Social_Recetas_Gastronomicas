@@ -22,7 +22,7 @@ public class PersonaResource {
             // Creando y guardando primera persona
             personaService.getPersona().setNombre("Luis Fernando");
             personaService.getPersona().setApellido("Martínez Sánchez");
-            personaService.getPersona().setApodo("Fercho");
+            personaService.getPersona().setApodo("Ferchoo");
             personaService.save();
 
             // Creando y guardando segunda persona
@@ -38,6 +38,8 @@ public class PersonaResource {
             responseMap.put("data", "Error al procesar la solicitud: " + e.getMessage());
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(responseMap).build();
         }
+
+
 
         responseMap.put("msg", "Ok");
         responseMap.put("data", "Test: " + statusMessage);

@@ -36,5 +36,8 @@ public class PersonaDao extends AdapterDao<Persona> {
         return true;
     }
     
+    
 }
 
+
+  
