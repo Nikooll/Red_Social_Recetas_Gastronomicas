@@ -10,3 +10,4 @@ public interface InterfazDao<T> {
     public T get(Integer id) throws Exception;
     
 }
+
