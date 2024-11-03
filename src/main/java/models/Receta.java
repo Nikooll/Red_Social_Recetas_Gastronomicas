@@ -3,6 +3,7 @@ package models;
 import java.util.Date;
 
 public class Receta {
+    
     private Integer idReceta;
     private String nombre;
     private Date fechaPublicacion;
