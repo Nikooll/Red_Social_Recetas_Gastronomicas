@@ -30,6 +30,7 @@ public class AdapterDao<T> implements InterfazDao<T> {
             list.toList(matrix);
         } catch (Exception e) {
             e.printStackTrace();
+            
         }
         return list;
     }
