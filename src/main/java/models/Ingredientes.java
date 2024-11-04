@@ -32,7 +32,7 @@ public class Ingredientes {
     public float getCantidad() {
         return cantidad;
     }
-
+    
     public void setCantidad(float cantidad) {
         this.cantidad = cantidad;
     }
