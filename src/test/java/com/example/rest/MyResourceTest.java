@@ -40,6 +40,7 @@ public class MyResourceTest {
         server.stop();
     }
 
+    
     /**
      * Test to see that the message "Got it!" is sent in the response.
      */

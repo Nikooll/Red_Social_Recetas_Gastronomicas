@@ -10,7 +10,6 @@ public class Node<E> {
         this.next = null;
     }
 
-    // Constructor para inicializar el nodo con info y el siguiente nodo
     public Node(E info, Node<E> next) {
         this.info = info;
         this.next = next;

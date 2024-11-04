@@ -1,7 +1,7 @@
 package models;
 
 public class Persona {
-    private int idPersona;
+    private Integer idPersona;
     private String nombre;
     private String apellido;
     private String apodo;
@@ -49,3 +49,4 @@ public class Persona {
         this.apodo = apodo;
     }
 }
+

@@ -18,6 +18,7 @@ public class PersonaResource {
         PersonaServicies personaService = new PersonaServicies();
         String statusMessage = "";
 
+        
         try {
             // Creando y guardando primera persona
             personaService.getPersona().setNombre("Luis Fernando");

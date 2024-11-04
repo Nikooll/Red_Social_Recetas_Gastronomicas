@@ -9,6 +9,7 @@ public class LinkedList<E> {
     private Node<E> header; 
     private Node<E> last;   
     private Integer size;   
+    
 
     // Constructor de la clase LinkedList
     public LinkedList() {
