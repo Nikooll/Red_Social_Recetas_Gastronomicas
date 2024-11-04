@@ -5,9 +5,15 @@ package com.red_social.rest.controller.Dao.implement;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.reflect.Type;
 import java.util.Scanner;
+
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.red_social.rest.controller.tda.list.LinkedList;
+
+import models.Recetas;
 
 public class AdapterDao<T> implements InterfazDao<T> {
     private Class<T> clazz;
@@ -85,6 +91,27 @@ public class AdapterDao<T> implements InterfazDao<T> {
             f.flush();
         } catch (Exception e) {
             System.out.println("Error al escribir en el archivo: " + e.getMessage());
+        }
+    }
+
+
+    public static void saveReceta(LinkedList<Recetas> recetas, String filePath) {
+        Gson gson = new Gson();
+        try (FileWriter writer = new FileWriter(filePath)) {
+            gson.toJson(recetas, writer);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
+    public static LinkedList<Recetas> loadReceta(String filePath) {
+        Gson gson = new Gson();
+        try (FileReader reader = new FileReader(filePath)) {
+            Type recetasListType = new TypeToken<LinkedList<Recetas>>() {}.getType();
+            return gson.fromJson(reader, recetasListType);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new LinkedList<>();
         }
     }
 }

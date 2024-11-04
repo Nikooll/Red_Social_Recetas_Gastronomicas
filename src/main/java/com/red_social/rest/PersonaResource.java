@@ -1,12 +1,14 @@
 package com.red_social.rest;
 
-import com.red_social.rest.controller.Dao.servicies.PersonaServicies;
 import java.util.HashMap;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+
+import com.red_social.rest.controller.Dao.servicies.PersonaServicies;
 
 @Path("personResource")
 public class PersonaResource {
@@ -39,8 +41,6 @@ public class PersonaResource {
             responseMap.put("data", "Error al procesar la solicitud: " + e.getMessage());
             return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(responseMap).build();
         }
-
-
 
         responseMap.put("msg", "Ok");
         responseMap.put("data", "Test: " + statusMessage);
