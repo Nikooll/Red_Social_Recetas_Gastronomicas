@@ -1,5 +1,7 @@
 package com.red_social.rest.controller.tda.list;
 
+import models.Categoria;
+
 // Importación de la clase Node si está en otro paquete
 // import com.red_social.rest.controller.tda.list.Node; 
 
@@ -76,7 +78,7 @@ public class LinkedList<E> {
         if (isEmpty()) {
             throw new ListEmptyException("Error, lista vacía");
         }
-        return header.getInfo(); // Corrección: `header.getInfo()` en lugar de `last.getInfo()`
+        return header.getInfo(); 
     }
 
     public E getLast() throws ListEmptyException {
@@ -146,7 +148,7 @@ public class LinkedList<E> {
     }
 
     public Node<E> getHeader() {
-        return header; // Devuelve el nodo cabecera
+        return header; 
     }
 
     public E[] toArray() {
@@ -170,5 +172,14 @@ public class LinkedList<E> {
         }
         return this;
     }
+
+    public boolean remove(Categoria id_categoria) {
+       
+        return false; 
+    }
+    
+    
+
+
 }
 
