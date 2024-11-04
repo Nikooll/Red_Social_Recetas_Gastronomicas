@@ -174,7 +174,7 @@ public class LinkedList<E> {
 
     public boolean remove(Categoria id_categoria) {
        
-        return false; // Devuelve false si el objeto no se encuentra en la lista
+        return false; 
     }
     
     

@@ -8,11 +8,11 @@ import com.red_social.rest.controller.tda.list.LinkedList;
 
 public class CategoriaDao extends AdapterDao<Categoria> {
     private Categoria categoria = new Categoria(0, "", true); 
-    private LinkedList<Categoria> listAll; // Asegúrate de que LinkedList esté parametrizado
+    private LinkedList<Categoria> listAll; 
 
     public CategoriaDao() {
         super(Categoria.class);
-        this.listAll = new LinkedList<>(); // Inicializamos listAll aquí
+        this.listAll = new LinkedList<>(); 
     }
 
     public Categoria getCategoria() {
@@ -72,9 +72,9 @@ public class CategoriaDao extends AdapterDao<Categoria> {
         }
     } catch (ListEmptyException e) {
         System.out.println("Error: La lista está vacía o el índice está fuera de rango.");
-        // Puedes devolver null o manejar la excepción de otra forma según lo necesites
+        
     }
-    return null; // Retorna null si no se encuentra la categoría
+    return null; 
 }
 
 }
