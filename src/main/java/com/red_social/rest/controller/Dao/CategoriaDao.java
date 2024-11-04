@@ -65,7 +65,7 @@ public class CategoriaDao extends AdapterDao<Categoria> {
     private Categoria findCategoriaById(int id_categoria) {
     try {
         for (int i = 0; i < getListAll().getSize(); i++) {
-            Categoria cat = getListAll().get(i); // Captura la excepción si ocurre
+            Categoria cat = getListAll().get(i); 
             if (cat.getIdCategoria() == id_categoria) {
                 return cat;
             }
