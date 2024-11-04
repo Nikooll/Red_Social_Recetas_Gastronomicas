@@ -1,35 +1,38 @@
 package com.red_social.rest.controller.tda.list;
 
-public class Node <E>{
-    private E info;
-    private Node <E> next;
-    
-// Getter para info
-public E getInfo() {
-    return info; // Devuelve la información del nodo
-}
+public class Node<E> {
+    private E info;          // Información contenida en el nodo
+    private Node<E> next;     // Referencia al siguiente nodo
 
-// Setter para info
-public void setInfo(E info) {
-    this.info = info; // Establece la información del nodo
-}
+    // Constructor para inicializar el nodo con solo info
+    public Node(E info) {
+        this.info = info;
+        this.next = null;
+    }
 
-// Getter para next
-public Node<E> getNext() {
-    return next; 
-}
+    // Constructor para inicializar el nodo con info y el siguiente nodo
+    public Node(E info, Node<E> next) {
+        this.info = info;
+        this.next = next;
+    }
 
-// Setter para next
-public void setNext(Node<E> next) {
-    this.next = next; 
-}
+    // Getter para obtener la información del nodo
+    public E getInfo() {
+        return info;
+    }
 
-public Node(E info){
-    this.info = info;
-    this.next = null;
-}
-public Node(E info, Node<E> next){
-    this.info = info;
-    this.next = next;
-}
+    // Setter para establecer la información del nodo
+    public void setInfo(E info) {
+        this.info = info;
+    }
+
+    // Getter para obtener el siguiente nodo
+    public Node<E> getNext() {
+        return next;
+    }
+
+    // Setter para establecer el siguiente nodo
+    public void setNext(Node<E> next) {
+        this.next = next;
+    }
 }
